@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('version') {
             steps {
-                sh 'hostname'
+                sh 'pwsh --version'
             }
         }
         
