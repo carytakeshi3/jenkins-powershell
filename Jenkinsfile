@@ -8,7 +8,7 @@ pipeline {
         }
         stage('runscript') {
             steps { 
-                sh '.\script.ps1'
+                sh 'powershell -File script.ps1'
             }
         }
     }
