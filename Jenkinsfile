@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('version') {
             steps {
-                sh 'pwsh --version'
+                sh '$PSVersionTable.PSVersion'
             }
         }
         stage('runscript') {
             steps { 
-                sh 'pwsh script.ps1'
+                sh '.\script.ps1'
             }
         }
     }
