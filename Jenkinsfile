@@ -6,10 +6,6 @@ pipeline {
                 sh '$PSVersionTable.PSVersion'
             }
         }
-        stage('runscript') {
-            steps { 
-                sh 'powershell -File script.ps1'
-            }
-        }
+        
     }
 }
