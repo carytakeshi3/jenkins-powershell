@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('version') {
             steps {
-                sh '$PSVersionTable.PSVersion'
+                sh 'pwsh $PSVersionTable.PSVersion'
             }
         }
         
