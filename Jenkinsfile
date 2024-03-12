@@ -1,4 +1,3 @@
-
 pipeline {
     agent any
     stages {
@@ -7,8 +6,8 @@ pipeline {
                 sh 'pwsh --version'
             }
         }
-        stage{'runscript'}{
-            steps{ 
+        stage('runscript') {
+            steps { 
                 sh 'pwsh script.ps1'
             }
         }
